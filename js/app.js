@@ -30,7 +30,7 @@ function onKeyUp(event) {
       logger.innerHTML = "Looking for number " + numberToCheckFor + " for you";
       HTTPRequest.get(CORS_URL + URL + numberToCheckFor).then(callback); // hit the URL
     } else {
-      // consoleLogger.innerHTML = "Please enter a number"; // user did not enter a number
+       logger.innerHTML = "Please enter a number"; // user did not enter a number
     }
 
   }
