@@ -15,6 +15,7 @@ window.onload = function() {
   // listeners
   search.addEventListener("keyup", onKeyUp);
   document.body.addEventListener("click", onClick);
+  search.addEventListener("click", function () {search.value = ""});
 
   // make sure the value coming from the search-input is a number
   numberRegularExpression = new RegExp(/^\d+(?:\.\d{1,2})?$/);
