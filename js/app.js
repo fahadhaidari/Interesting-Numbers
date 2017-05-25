@@ -3,6 +3,7 @@ var URL = "http://numbersapi.com/"; // the Numbers-API URL
 var searchField = undefined;
 var logger = undefined;
 var numberRegularExpression = undefined;
+var infoMessage = undefined;
 var numberToCheckFor = 0;
 
 window.onload = function() {
@@ -10,13 +11,21 @@ window.onload = function() {
   // consoleLogger = Utility.getElement("console"); // it's the container that shows the result
   searchField = Utility.getElement("search"); // search-field, where user enter the number he/she is interested in
   logger      = Utility.getElement("logger"); // display this preloader while fetching the result
-
+  infoMessage = Utility.getElement("info-message");
   // listeners
   search.addEventListener("keyup", onKeyUp);
   document.body.addEventListener("click", onClick);
 
   // make sure the value coming from the search-input is a number
   numberRegularExpression = new RegExp(/^\d+(?:\.\d{1,2})?$/);
+
+
+  setTimeout(
+  function()
+  {
+    $(infoMessage).fadeOut("slow");
+  }, 5000);
+
 }
 
 function onKeyUp(event) {
