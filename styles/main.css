@@ -11,24 +11,25 @@ html, body {
 .container {
   background: #FFFFFF;
   margin: 0px auto;
-  width: 99%;
-  height: 99%;
+  width: 100%;
+  height: 100%;
   display: inline-block;
 }
 
 .box {
   background: #FFFFFF;
-  margin: 20% auto;
+  margin: 0px auto;
+  margin-top: 20% auto;
   width: 90%;
-  height: 40%;
+  height: 20%;
   display: block;
 }
 
 input {
   width: 80%;
   height: 20%;
-  text-align: left;
-  margin: 20% auto;
+  text-align: center;
+  margin: 10% auto;
   font-size: 4vh;
   display: block;
   font-family: sans-serif;
@@ -45,28 +46,22 @@ input:focus{
 }
 
 p {
-  /*background-color: #111111;*/
   color: #222222;
   margin: 0px auto;
   text-align: center;
   font-family: sans-serif;
 }
 
-.console {
+.logger {
   margin: 10px auto;
-  width 90%;
-  height: 10%;
+  background: #FF8866;
   text-align: center;
-  background-color: #FF4444;
-  color: #FFFFFF;
-  display: block;
-}
-
-.preloaer {
-  margin: 0px auto;
-  width 5%;
-  height: 10%;
-  text-align: center;
-  color: #888888;
-  display: none;
+  font-size: 4vw;
+  color: #EEEEEE;
+  font-family: sans-serif;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+  padding-top: 15%;
 }
